@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="557.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="karhabty_pidev_controllers.Gestion_Voiture_AutoEcoleController">
+   <children>
+      <Label layoutX="220.0" layoutY="30.0" prefHeight="44.0" prefWidth="315.0" text="Gérer une voiture Auto-Ecole" textAlignment="CENTER" textFill="#f80606">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="105.0" prefHeight="30.0" prefWidth="132.0" text="Matricule :" />
+      <Label layoutX="53.0" layoutY="148.0" prefHeight="30.0" prefWidth="72.0" text="Marque :" />
+      <Label layoutX="47.0" layoutY="193.0" prefHeight="30.0" prefWidth="78.0" text=" Couleur :" />
+      <Label layoutX="53.0" layoutY="280.0" prefHeight="30.0" prefWidth="87.0" text="Carburant :" />
+      <Label layoutX="53.0" layoutY="236.0" prefHeight="36.0" prefWidth="179.0" text="Année de mise en circulation :" />
+      <Label layoutX="53.0" layoutY="325.0" prefHeight="21.0" prefWidth="121.0" text="Nom de l'agence :" />
+      <TextField fx:id="matricule" layoutX="220.0" layoutY="108.0" prefHeight="25.0" prefWidth="315.0" />
+      <TextField fx:id="marque" layoutX="218.0" layoutY="151.0" prefHeight="25.0" prefWidth="315.0" />
+      <TextField fx:id="couleur" layoutX="218.0" layoutY="196.0" prefHeight="25.0" prefWidth="315.0" />
+      <TextField fx:id="annee" layoutX="218.0" layoutY="242.0" prefHeight="25.0" prefWidth="315.0" />
+      <ComboBox fx:id="agence" layoutX="218.0" layoutY="323.0" prefHeight="25.0" prefWidth="315.0" />
+      <Button fx:id="ajouter" layoutX="39.0" layoutY="376.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="36.0" prefWidth="194.0" text="Ajouter">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="modifier" layoutX="270.0" layoutY="376.0" mnemonicParsing="false" onAction="#modifier" prefHeight="36.0" prefWidth="194.0" text="Modifier">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="supprimer" layoutX="501.0" layoutY="376.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="36.0" prefWidth="194.0" text="Supprimer">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <TableView fx:id="table" layoutY="430.0" prefHeight="127.0" prefWidth="734.0">
+        <columns>
+          <TableColumn fx:id="list_matricule" prefWidth="145.0" text="matricule" />
+          <TableColumn fx:id="list_marque" prefWidth="195.0" text="marque" />
+          <TableColumn fx:id="list_couleur" prefWidth="181.0" text="couleur" />
+          <TableColumn fx:id="list_agence" prefWidth="212.0" text="carburant" />
+        </columns>
+      </TableView>
+      <Button layoutX="566.0" layoutY="30.0" mnemonicParsing="false" onAction="#refresh" prefHeight="44.0" prefWidth="146.0" text="refresh" textFill="#6d12e0">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button layoutX="23.0" layoutY="30.0" mnemonicParsing="false" onAction="#retour" prefHeight="44.0" prefWidth="146.0" text="Retour" textFill="#6d12e0">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <ComboBox fx:id="carburant" layoutX="220.0" layoutY="283.0" prefHeight="25.0" prefWidth="315.0" />
+   </children>
+</AnchorPane>

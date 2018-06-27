@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="557.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="karhabty_pidev_controllers.Menu_Principale_AutoEcoleController">
+   <children>
+      <ImageView fitHeight="557.0" fitWidth="734.0" opacity="0.51">
+         <image>
+            <Image url="@carkey.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="232.0" layoutY="109.0" mnemonicParsing="false" onAction="#manager" prefHeight="48.0" prefWidth="204.0" text="Manager" />
+      <Button layoutX="232.0" layoutY="243.0" mnemonicParsing="false" onAction="#admin" prefHeight="48.0" prefWidth="204.0" text="Admin" />
+      <Button layoutX="232.0" layoutY="379.0" mnemonicParsing="false" onAction="#client" prefHeight="48.0" prefWidth="204.0" text="Client" />
+      <Label fx:id="lab" layoutX="38.0" layoutY="109.0" prefHeight="40.0" prefWidth="180.0" text="Accéder à l'espace :" textFill="#4303f2">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="247.0" prefHeight="40.0" prefWidth="159.0" text="Accéder à l'espace :" textFill="#3502ee">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="388.0" prefHeight="30.0" prefWidth="172.0" text="Accéder à l'espace :" textFill="#0a24e8">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

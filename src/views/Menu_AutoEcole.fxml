@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="557.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="karhabty_pidev_controllers.Menu_AutoEcoleController">
+   <children>
+      <ImageView fitHeight="558.0" fitWidth="734.0" opacity="0.32">
+         <image>
+            <Image url="@accident-d’une-auto-ecole.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="agence_ae" layoutX="22.0" layoutY="142.0" mnemonicParsing="false" onAction="#gestion_agence" prefHeight="60.0" prefWidth="200.0" text="Agence" textFill="#2e09e7">
+         <font>
+            <Font size="23.0" />
+         </font></Button>
+      <Button fx:id="voiture_ae" layoutX="22.0" layoutY="229.0" mnemonicParsing="false" onAction="#gestion_voiture" prefHeight="60.0" prefWidth="200.0" text="Voiture" textFill="#2e09e7">
+         <font>
+            <Font size="23.0" />
+         </font></Button>
+      <Button fx:id="agent_ae" layoutX="22.0" layoutY="314.0" mnemonicParsing="false" onAction="#gestion_agent" prefHeight="60.0" prefWidth="200.0" text="Agent" textFill="#2e09e7">
+         <font>
+            <Font size="23.0" />
+         </font></Button>
+      <Button fx:id="exercice_ae" layoutX="22.0" layoutY="404.0" mnemonicParsing="false" onAction="#gestion_exercice" prefHeight="60.0" prefWidth="200.0" text="Exercice" textFill="#2e09e7">
+         <font>
+            <Font size="23.0" />
+         </font></Button>
+      <Label fx:id="nom" layoutX="278.0" layoutY="22.0" prefHeight="44.0" prefWidth="200.0" textFill="#e30b64">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="553.0" layoutY="19.0" mnemonicParsing="false" onAction="#retour" prefHeight="50.0" prefWidth="166.0" text="Déconnexion" textFill="#ee0606">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

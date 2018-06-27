@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="642.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="karhabty_pidev_controllers.Client_AutoEcoleController">
+   <children>
+      <Label layoutX="63.0" layoutY="23.0" prefHeight="32.0" prefWidth="123.0" text="Recherche selon:" textFill="#9c0606" underline="true" />
+      <ComboBox fx:id="type_recherche" layoutX="166.0" layoutY="28.0" prefHeight="25.0" prefWidth="97.0" />
+      <TextField fx:id="recherche" layoutX="282.0" layoutY="27.0" prefHeight="25.0" prefWidth="171.0" />
+      <Button layoutX="464.0" layoutY="28.0" mnemonicParsing="false" onAction="#rechercher" prefHeight="25.0" prefWidth="115.0" text="Rechercher" />
+      <TableView fx:id="agence" layoutY="66.0" prefHeight="148.0" prefWidth="734.0">
+        <columns>
+          <TableColumn fx:id="nom_agence" prefWidth="107.0" text="Nom agence" />
+          <TableColumn fx:id="tel_agence" prefWidth="124.0" text="Téléphone" />
+          <TableColumn fx:id="horaire_agence" prefWidth="132.0" text="Horaire de travail" />
+          <TableColumn fx:id="rue_agence" prefWidth="173.0" text="Rue" />
+          <TableColumn fx:id="code_agence" prefWidth="91.0" text="Code postal" />
+          <TableColumn fx:id="ville_agence" prefWidth="105.0" text="Ville" />
+        </columns>
+      </TableView>
+      <TableView fx:id="voiture" layoutY="253.0" prefHeight="102.0" prefWidth="734.0">
+        <columns>
+          <TableColumn fx:id="matricule_voiture" prefWidth="139.0" text="Matricule" />
+          <TableColumn fx:id="marque_voiture" prefWidth="134.0" text="Marque" />
+           <TableColumn fx:id="couleur_voiture" prefWidth="142.0" text="Couleur" />
+            <TableColumn fx:id="carburant_voiture" prefWidth="145.0" text="Carburant" />
+             <TableColumn fx:id="annee_voiture" prefWidth="172.0" text="Année de mise en circulation" />
+        </columns>
+      </TableView>
+      <TableView fx:id="agent" layoutY="395.0" prefHeight="102.0" prefWidth="734.0">
+        <columns>
+          <TableColumn fx:id="nom_agent" prefWidth="156.0" text="Nom" />
+          <TableColumn fx:id="prenom_agent" prefWidth="153.0" text="Prenom" />
+           <TableColumn fx:id="sexe_agent" prefWidth="120.0" text="Sexe" />
+            <TableColumn fx:id="tel_agent" prefWidth="165.0" text="Téléphone" />
+             <TableColumn fx:id="type_agent" prefWidth="136.0" text="Type" />
+        </columns>
+      </TableView>
+      <TableView fx:id="exercice" layoutY="529.0" prefHeight="102.0" prefWidth="734.0">
+        <columns>
+          <TableColumn fx:id="agent_exercice" prefWidth="179.0" text="Matricule" />
+          <TableColumn fx:id="type_exercice" prefWidth="182.0" text="type" />
+          <TableColumn fx:id="prix_exercice" prefWidth="186.0" text="prix" />
+          <TableColumn fx:id="date_heure_exercice" prefWidth="182.0" text="date et heure" />
+        </columns>
+      </TableView>
+      <Label layoutX="4.0" layoutY="221.0" prefHeight="32.0" prefWidth="275.0" text="Consulter la liste des voiture de cette agence :" textFill="#1d06ee">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="9.0" layoutY="364.0" prefHeight="25.0" prefWidth="302.0" text="Consulter la liste des agents de cette agence :" textFill="#1c05ce">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="8.0" layoutY="497.0" prefHeight="25.0" prefWidth="198.0" text="Consulter votre exercice :" textFill="#1c05ce">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Label>
+      <Button layoutX="589.0" layoutY="20.0" mnemonicParsing="false" onAction="#retour" prefHeight="40.0" prefWidth="135.0" text="Déconnexion" textFill="#f80202">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
